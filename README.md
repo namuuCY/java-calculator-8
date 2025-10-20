@@ -22,7 +22,13 @@
 - [x] CalculatorController 구현
 - [x] AppConfig 구현
 - [x] ApplicationTest(통합테스트) 작성
-- [ ] mermaid 및 소감문 작성
+- [x] mermaid 및 소감문 작성
+
+---
+
+![screenshot](mermaid.png)
+
+---
 
 ## 프로그래밍 요구 사항
 
