@@ -15,7 +15,7 @@ public class Parser {
         String regexPattern = buildRegexPattern(customDelimiter);
         String[] strArray = trimmedInputString.split(regexPattern);
 
-        // 전부다 양수인지 확인
+        System.out.println(Arrays.toString(strArray));
 
         return Arrays.stream(strArray)
                 .map(this::parseInt)
@@ -27,12 +27,12 @@ public class Parser {
             return input;
         }
 
-        int newlineIndex = input.indexOf("\n");
-        return input.substring(newlineIndex + 1);
+        int newlineIndex = input.indexOf("\\n");
+        return input.substring(newlineIndex + 2);
     }
 
     private String extractCustomDelimiter(String input) {
-        int newlineIndex = input.indexOf('\n');
+        int newlineIndex = input.indexOf("\\n");
 
         if (newlineIndex == -1) {
             return null;
@@ -47,9 +47,10 @@ public class Parser {
 
     private String buildRegexPattern(String delimiter) {
 
-        return "[:,"
-                + delimiter
-                + "]";
+        if (Objects.isNull(delimiter)) {
+            return "[,:]"; // 기본 구분자
+        }
+        return "[:," + delimiter + "]";
     }
 
     private Integer parseInt(String numberString) {
