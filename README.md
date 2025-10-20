@@ -15,10 +15,10 @@
     - [x] StringCalculatorTest 작성
     - [x] StringCalculator 작성
     - [x] Operator 작성
-- [ ] InputView 구현
-- [ ] OutputView 구현
-    - [ ] OutputViewTest 작성
-    - [ ] OutputView 작성
+- [x] InputView 구현
+- [x] OutputView 구현
+    - [x] OutputViewTest 작성
+    - [x] OutputView 작성
 - [ ] CalculatorController 구현
 - [ ] AppConfig 구현
 - [ ] ApplicationTest(통합테스트) 작성
