@@ -7,9 +7,10 @@
 - [x] 기본 테스트 요구사항 및 `camp.nextstep.edu.missionutils` 확인해보기
     - [x] CustomException, ErrorCode 작성
     - [x] IllegalArgumentException을 상속한 클래스에서도 동작하는지 확인해보기
-- [ ] Parser 구현
-    - [ ] ParserTest 작성
-    - [ ] Parser 작성
+- [x] Parser 구현
+    - [x] ParserTest 작성
+    - [x] Parser 작성
+        - [정규 표현식 리서치](https://stackoverflow.com/questions/5993779/use-string-split-with-multiple-delimiters)
 - [ ] StringCalculator 구현
     - [ ] StringCalculatorTest 작성
     - [ ] StringCalculator 작성

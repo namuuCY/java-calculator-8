@@ -9,4 +9,8 @@ public class CustomException extends IllegalArgumentException {
         super();
     }
 
+    public CustomException(ErrorCode errorCode) {
+        super();
+    }
+
 }
