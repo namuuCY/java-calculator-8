@@ -19,7 +19,7 @@
 - [x] OutputView 구현
     - [x] OutputViewTest 작성
     - [x] OutputView 작성
-- [ ] CalculatorController 구현
+- [x] CalculatorController 구현
 - [ ] AppConfig 구현
 - [ ] ApplicationTest(통합테스트) 작성
 - [ ] mermaid 및 소감문 작성
