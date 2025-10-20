@@ -1,7 +1,7 @@
 package calculator.domain;
 
-import exception.CustomException;
-import exception.ErrorCode;
+import calculator.exception.CustomException;
+import calculator.exception.ErrorCode;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;

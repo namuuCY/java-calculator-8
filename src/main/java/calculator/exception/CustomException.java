@@ -1,4 +1,4 @@
-package exception;
+package calculator.exception;
 
 public class CustomException extends IllegalArgumentException {
 

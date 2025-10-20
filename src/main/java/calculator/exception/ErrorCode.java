@@ -1,4 +1,4 @@
-package exception;
+package calculator.exception;
 
 public enum ErrorCode {
     TEST_CODE("테스트 메세지 입니다", "TEST_001"),
