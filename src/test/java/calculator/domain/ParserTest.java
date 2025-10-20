@@ -59,28 +59,28 @@ class ParserTest {
 
     @Test
     void customDelimiterTest() {
-        String input = "//;\n1;2";
+        String input = "//;\\n1;2";
         List<Integer> result = parser.parseString(input);
         assertThat(result).isEqualTo(Arrays.asList(1, 2));
     }
 
     @Test
     void customDelimiterTest2() {
-        String input = "//;\n1;2;3";
+        String input = "//;\\n1;2;3";
         List<Integer> result = parser.parseString(input);
         assertThat(result).isEqualTo(Arrays.asList(1, 2, 3));
     }
 
     @Test
     void customComplexDelimiterTest() {
-        String input = "//;\n4;5,6";
+        String input = "//;\\n4;5,6";
         List<Integer> result = parser.parseString(input);
         assertThat(result).isEqualTo(Arrays.asList(4, 5, 6));
     }
 
     @Test
     void customComplexDelimiterTest2() {
-        String input = "//;\n4;5,6";
+        String input = "//;\\n4;5,6";
         List<Integer> result = parser.parseString(input);
         assertThat(result).isEqualTo(Arrays.asList(4, 5, 6));
     }
@@ -102,5 +102,5 @@ class ParserTest {
                 }
         ).isInstanceOf(IllegalArgumentException.class);
     }
-    
+
 }

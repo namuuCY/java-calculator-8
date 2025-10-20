@@ -43,7 +43,7 @@ public class StringCalculatorTest {
 
     @Test
     void complexIntegersTest() {
-        String input = "//-\n1-2:34";
+        String input = "//-\\n1-2:34";
         Integer answer = stringCalculator.add(input);
         assertThat(answer).isEqualTo(37);
     }
