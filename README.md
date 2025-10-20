@@ -11,9 +11,10 @@
     - [x] ParserTest 작성
     - [x] Parser 작성
         - [정규 표현식 리서치](https://stackoverflow.com/questions/5993779/use-string-split-with-multiple-delimiters)
-- [ ] StringCalculator 구현
-    - [ ] StringCalculatorTest 작성
-    - [ ] StringCalculator 작성
+- [x] StringCalculator 구현
+    - [x] StringCalculatorTest 작성
+    - [x] StringCalculator 작성
+    - [x] Operator 작성
 - [ ] InputView 구현
 - [ ] OutputView 구현
     - [ ] OutputViewTest 작성
