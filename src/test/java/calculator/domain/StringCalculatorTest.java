@@ -48,5 +48,12 @@ public class StringCalculatorTest {
         assertThat(answer).isEqualTo(37);
     }
 
+    @Test
+    void nullTest() {
+        String input = " ";
+        Integer answer = stringCalculator.add(input);
+        assertThat(answer).isEqualTo(0);
+    }
+
 
 }

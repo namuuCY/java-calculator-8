@@ -2,6 +2,7 @@ package calculator.domain;
 
 import calculator.exception.CustomException;
 import calculator.exception.ErrorCode;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -10,12 +11,14 @@ public class Parser {
 
     public List<Integer> parseString(String input) {
 
+        if (input.trim().isEmpty()) {
+            return new ArrayList<>();
+        }
+
         String customDelimiter = extractCustomDelimiter(input);
         String trimmedInputString = trimInputString(input, customDelimiter);
         String regexPattern = buildRegexPattern(customDelimiter);
         String[] strArray = trimmedInputString.split(regexPattern);
-
-        System.out.println(Arrays.toString(strArray));
 
         return Arrays.stream(strArray)
                 .map(this::parseInt)

@@ -4,6 +4,7 @@ package calculator.domain;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
@@ -101,6 +102,28 @@ class ParserTest {
                     parser.parseString(input);
                 }
         ).isInstanceOf(IllegalArgumentException.class);
+    }
+
+    @Test
+    void nullTest() {
+        String input = "";
+        List<Integer> result = parser.parseString(input);
+        assertThat(result).isEqualTo(new ArrayList<>());
+    }
+
+
+    @Test
+    void nullTest2() {
+        String input = " ";
+        List<Integer> result = parser.parseString(input);
+        assertThat(result).isEqualTo(new ArrayList<>());
+    }
+
+    @Test
+    void nullTest3() {
+        String input = "\n";
+        List<Integer> result = parser.parseString(input);
+        assertThat(result).isEqualTo(new ArrayList<>());
     }
 
 }
