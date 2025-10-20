@@ -4,7 +4,23 @@
 
 - [x] 프로젝트 세팅 및 README.md 정리
 - [x] 각종 컨벤션 및 요구사항 정리
-- [ ] 
+- [x] 기본 테스트 요구사항 및 `camp.nextstep.edu.missionutils` 확인해보기
+    - [x] CustomException, ErrorCode 작성
+    - [x] IllegalArgumentException을 상속한 클래스에서도 동작하는지 확인해보기
+- [ ] Parser 구현
+    - [ ] ParserTest 작성
+    - [ ] Parser 작성
+- [ ] StringCalculator 구현
+    - [ ] StringCalculatorTest 작성
+    - [ ] StringCalculator 작성
+- [ ] InputView 구현
+- [ ] OutputView 구현
+    - [ ] OutputViewTest 작성
+    - [ ] OutputView 작성
+- [ ] CalculatorController 구현
+- [ ] AppConfig 구현
+- [ ] ApplicationTest(통합테스트) 작성
+- [ ] mermaid 및 소감문 작성
 
 ## 프로그래밍 요구 사항
 
